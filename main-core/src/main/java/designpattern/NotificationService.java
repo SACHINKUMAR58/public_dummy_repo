@@ -18,5 +18,7 @@ public class NotificationService {
         } else {
             System.out.println("Invalid notification type");
         }
+
+        System.out.println("Completed");
     }
 }

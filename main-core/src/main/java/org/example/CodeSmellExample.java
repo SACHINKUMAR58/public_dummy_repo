@@ -3,6 +3,17 @@ package org.example;
 public class CodeSmellExample {
 
     // Code Smell: Magic Number
+    /**
+     * Performs a calculation based on the input and prints messages accordingly.
+     * @example
+     * className.calculate(42);
+     * // Expected output: The answer to everything!
+     * @param x - The input value for the calculation.
+     * @description
+     *   - The method uses the magic number 42 to provide a specific output.
+     *   - When the input is zero, it handles this as a special case.
+     *   - There is a hardcoded loop which runs exactly 10 times for all inputs other than 42 and zero.
+     */
     public void calculate(int x) {
         if (x == 42) { // Magic number
             System.out.println("The answer to everything!");

@@ -1,7 +1,7 @@
 package designpattern.strategy;
 
 public class Order {
-    private String customer;
+    private final String customer;
     private double totalAmount;
     private String discountType;
 
